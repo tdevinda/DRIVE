@@ -1,7 +1,7 @@
 import torch
 import math
 import torch.nn.functional as F
-from kornia import PyrDown, PyrUp
+from kornia.geometry.transform import PyrDown, PyrUp
 
 class TorchFovea(torch.nn.Module):
     def __init__(self, imgsize, sigma, level=5, factor=2.0, device=torch.device('cuda')):
